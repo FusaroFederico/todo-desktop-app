@@ -12,9 +12,38 @@
     <!-- /Bootstrap link -->
 </head>
 
-<body>
-    <main>
+<body class="bg-light p-5">
+    <main class="container-fluid bg-white px-5 py-3">
+        <h1 class="text-center"> ToDo List </h1>
+        <hr>
+        <div class="container-fluid d-flex flex-row justify-content-center align-items-end mb-3">
+            <label for="" class="form-label" style="min-width: 100px;">Enter title: </label>
+            <input type="text" class="form-control" id="todo-title-input" minlength="5" maxlength="30"
+                style="max-width: 50%;" placeholder="conquistare il mondo">
+            <button type="submit" class="btn btn-primary ms-3">Add +</button>
+        </div>
+        <div class="container-fluid">
+            <table class="table fs-5 fw-normal">
+                <thead>
+                    <th>Title</th>
+                    <th>Completed</th>
+                </thead>
+                <tbody id="todo-table-body">
+                </tbody>
+            </table>
+        </div>
     </main>
+
+    <!-- Eel script -->
+    <script src="/eel.js"></script>
+    <!-- /Eel script -->
+    <!-- Jquery script -->
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <!-- /Jquery script -->
+    <!-- JS script -->
+    <script src="myscript.js"></script>
+    <!-- /JS script -->
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
