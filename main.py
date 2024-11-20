@@ -8,7 +8,7 @@ eel.init("gui")
 # read_data will allow app to read data from data.json file
 def read_data():
     with open("data.json", "r") as file:
-        content = json.loads(file.read())
+        content = json.load(file)
     return content
 
 # write_data will write data into data.json file
